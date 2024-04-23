@@ -6,3 +6,5 @@ Annee = ($_.YearOfManufacture) -join ""
 NumeroSerie = ($_.SerialNumberID -notmatch '^0$' | foreach {[char]$_}) -join ""
 }
 }
+# Ajoutez la commande exit pour fermer PowerShell
+exit
